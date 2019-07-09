@@ -1,0 +1,28 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+.headdata{
+ padding: 30px;
+ margin-right: 500px;
+ margin-left: 300px;
+ float:right;
+ font-size: 30px;
+ }
+.headdata input{
+    height: 30px;
+    width: 200px;
+}
+
+.example-card {
+    max-width: 200px;
+    float: left;
+    padding:50px;
+    margin-top: 20px;
+    height: 220px;
+    width: 200px;
+    margin-left: 10px;
+      }
+.titledisplay p {
+margin: auto;
+text-transform: initial;
+text-align: justify;
+font-size: 15px;
+}

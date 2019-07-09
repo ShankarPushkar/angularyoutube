@@ -1,0 +1,26 @@
+<html>
+<header>
+    <div class="headdata">
+        <input #myvalue type="text">
+        <button mat-raised-button color="primary" (click)="log(myvalue.value)">search</button>
+    </div>
+</header>
+
+<body>
+    
+    <div *ngFor="let video of videos">
+            
+            <mat-card class="example-card">
+                <img mat-card-image src="{{video.snippet.thumbnails.high.url}}">
+                <mat-card-title class="titledisplay">
+                  <p>  <a href="https://www.youtube.com/watch?v={{video.id.videoId}}">{{video.snippet.title}}</a></p>
+                </mat-card-title>
+                <mat-card-content class="titledisplay">
+                    <p><a href="https://www.youtube.com/user/{{video.snippet.channelTitle}}">Channel: {{video.snippet.channelTitle}}</a></p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <app-trending></app-trending>
+</body>
+
+</html>

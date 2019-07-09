@@ -1,0 +1,12 @@
+<div *ngFor="let trending of trendings">
+
+        <mat-card class="example-card">
+            <img mat-card-image src="{{trending.snippet.thumbnails.high.url}}">
+            <mat-card-title class="titledisplay">
+              <p>  <a href="https://www.youtube.com/watch?v={{trending.id.videoId}}">{{trending.snippet.title}}</a></p>
+            </mat-card-title>
+            <mat-card-content class="titledisplay">
+                <p><a href="https://www.youtube.com/user/{{trending.snippet.channelTitle}}">Channel: {{trending.snippet.channelTitle}}</a></p>
+            </mat-card-content>
+        </mat-card>
+    </div>
